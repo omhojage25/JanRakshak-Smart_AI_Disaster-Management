@@ -9,6 +9,7 @@
 <br>
 
 [🚨 Features](#-key-features) •
+[📸 Screenshots](#-project-screenshots) •
 [🔄 Workflow](#-main-workflow) •
 [🏗️ Architecture](#️-system-architecture) •
 [🛠️ Tech Stack](#️-technology-stack) •
@@ -33,7 +34,35 @@ The system combines **AI, Machine Learning, location intelligence, route optimiz
 
 ---
 
-## 🎯 Problem
+# 📸 Project Screenshots
+
+### 👤 Citizen Emergency Reporting
+
+Users can submit an emergency report with location and incident details.
+
+![Citizen Emergency Reporting](screenshots/citizen-reporting.png)
+
+### 📍 Citizen Report Tracking
+
+Citizens can track the reported incident, its location, and response progress.
+
+![Citizen Report Tracking](screenshots/report-tracking.png)
+
+### 🖥️ Emergency Command Center
+
+The control room provides a real-time view of incidents, locations, routes, and responding units.
+
+![Emergency Command Center](screenshots/command-center.png)
+
+### 🤖 AI Risk Assessment
+
+The system analyzes the incident and provides a risk score, class probabilities, and extracted evidence.
+
+![AI Risk Assessment](screenshots/ai-risk-assessment.png)
+
+---
+
+# 🎯 Problem
 
 Emergency situations can generate large numbers of reports that may be:
 
@@ -104,11 +133,9 @@ Traditional nearest-resource assignment can therefore lead to inefficient alloca
 🔄 Re-optimization
 ```
 
----
-
 # 🤖 AI + ML
 
-### Gemini AI
+## Gemini AI
 
 Gemini extracts important information from emergency reports, including:
 
@@ -123,290 +150,16 @@ Gemini extracts important information from emergency reports, including:
 
 If Gemini is unavailable, a **keyword + regex fallback classifier** can continue basic incident processing.
 
-### XGBoost Risk Assessment
+## XGBoost Risk Assessment
 
 Extracted incident evidence is passed to an **XGBoost multiclass model**.
 
 ```text
 LOW  →  MEDIUM  →  HIGH  →  CRITICAL
-```
-
-**Test Accuracy:** `95.57%`
-
-> The evaluation uses controlled/synthetic data and is not real-world emergency severity validation.
-
----
-
-# 🚑 Resource Optimization
-
-Instead of independently assigning the nearest unit to every incident, JanRakshak considers **multiple incidents and available resources together**.
-
-```text
-Incidents + Resources
-        │
-        ▼
-Resource Requirements
-        │
-        ▼
-Road-Based ETAs
-        │
-        ▼
-Risk / Priority
-        │
-        ▼
-Hungarian Algorithm
-        │
-        ▼
-Recommended Allocation
-        │
-        ▼
-Coordinator Approval
-```
-
-This allows the system to coordinate resources globally rather than treating every incident independently.
-
----
-
-# 📍 Location + Routing
-
-### Location Resolution
-
-```text
-Emergency Report
-       │
-       ▼
-Geocoding Candidates
-       │
-       ▼
-Candidate Scoring
-       │
-       ▼
-GPS Reconciliation
-       │
-       ▼
-Confidence / Precision
-       │
-       ▼
-Verification
-```
-
-### Road Routing
-
-```text
-OpenStreetMap + OSRM
-          │
-          ▼
-Real Road Travel Time
-          │
-          ▼
-Blocked Road Handling
-          │
-          ▼
-Alternative Routes
-```
-
----
-
-# 🏗️ System Architecture
-
-```text
-┌─────────────────────────────┐
-│      👤 Citizen / Staff     │
-│       Text / Voice / GPS    │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       🤖 AI Extraction      │
-│      Gemini / Fallback      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│    📍 Location Resolution   │
-│      + Deduplication        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│    🧠 XGBoost Risk Model    │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│    🚑 Resource Optimization │
-│      Hungarian Algorithm    │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      🛣️ OSRM Routing        │
-│       + Blocked Roads       │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│    👨‍💼 Coordinator Approval  │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│     🚒 Field Response       │
-│      + Live Tracking        │
-└─────────────────────────────┘
-```
-
----
-
-# 🛠️ Technology Stack
-
-| Category | Technologies |
-|---|---|
-| **Frontend** | React, TypeScript, Vite, Tailwind CSS |
-| **Backend** | Node.js, Express, TypeScript |
-| **Database** | PGlite / PostgreSQL |
-| **AI** | Google Gemini |
-| **ML** | XGBoost |
-| **Maps** | Leaflet, OpenStreetMap |
-| **Geocoding** | Nominatim |
-| **Routing** | OSRM |
-| **Optimization** | Hungarian Algorithm |
-| **Real-Time** | Socket.IO |
-| **State Management** | Zustand |
-
----
-
-# 📊 Prototype Results
-
-### 🧠 Risk Model
-
-| Metric | Result |
-|---|---:|
-| XGBoost Test Accuracy | **95.57%** |
-
-### 🚑 Resource Allocation Benchmark
-
-| Metric | Baseline | JanRakshak |
-|---|---:|---:|
-| Incidents fully covered | 38% | **83%** |
-| Duplicate unit assignments | 16 | **0** |
-| Wrong unit type assignments | 4 | **0** |
-
-> ⚠️ Results are from controlled/synthetic benchmark scenarios and demonstrate prototype behavior rather than real-world emergency performance.
-
----
-
-# 🎯 Project Scope
-
-### 📍 Location
-
-**Mumbai, India**
-
-### 🚨 Supported Emergencies
-
-`🔥 Fire` • `🌊 Flood` • `🏢 Building Collapse` • `☣️ Gas Leak` • `🚗 Road Accident`
-
-### 👥 Main Users
-
-```text
-👥 Citizen
-     │
-     ▼
-👨‍💼 Emergency Coordinator
-     │
-     ▼
-🚒 Field Units
-     │
-     ▼
-🔐 Administrator
-```
-
----
-
-# 🚀 Quick Start
-
-### Requirements
-
-- Node.js 20+
-- npm
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/omhojage25/JanRakshak-Smart_AI_Disaster-Management.git
-```
-
-### 2. Enter Project
-
-```bash
-cd JanRakshak-Smart_AI_Disaster-Management
-```
-
-### 3. Install Dependencies
-
-```bash
-npm install
-```
-
-### 4. Create `.env`
-
-```env
-GEMINI_API_KEY=your_api_key
-```
-
-### 5. Run
-
-```bash
-npm run dev
-```
-
-Open:
-
-```text
-http://localhost:5173
-```
-
----
-
-# 🔮 Future Scope
-
-- 🌐 Multi-city deployment
-- 🛰️ Additional real-time disaster data sources
-- 📡 IoT and sensor integration
-- 🚦 Live traffic integration
-- 🧠 Real-world risk model validation
-- 📍 Improved multilingual location understanding
-- ☁️ Scalable cloud deployment
-
----
-
-# 👥 Team
-
-| Member |
-|---|
-| **Om Hojage** |
-| **Avishkar Padwal** |
-| **Aditya Pallerla** |
-| **Sohan Pangale** |
-
----
-
-# 📚 Documentation
 
 For complete technical details covering:
 
-**Architecture • AI/ML Methodology • Database • APIs • Algorithms • Testing • Security • Implementation • Future Scope**
+Architecture • AI/ML Methodology • Database • APIs • Algorithms • Testing • Security • Implementation • Future Scope
+```
 
-### 👉 [📖 View Complete Project Documentation](JANRAKSHAK_PROJECT_DOCUMENTATION.md)
-
----
-
-<div align="center">
-
-## 🇮🇳 JanRakshak
-
-**Understand → Prioritize → Coordinate → Respond**
-
-*AI-assisted emergency response with humans always in control.*
-
-</div>
+👉 📖 View Complete Project Documentation
