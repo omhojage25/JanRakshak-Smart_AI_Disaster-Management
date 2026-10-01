@@ -40,25 +40,25 @@ The system combines **AI, Machine Learning, location intelligence, route optimiz
 
 Users can submit an emergency report with location and incident details.
 
-![Citizen Emergency Reporting](screenshots/citizen-reporting.png)
+![Citizen Emergency Reporting](Output%20Screenshots/Image1.jpeg)
 
 ### 📍 Citizen Report Tracking
 
 Citizens can track the reported incident, its location, and response progress.
 
-![Citizen Report Tracking](screenshots/report-tracking.png)
+![Citizen Report Tracking](Output%20Screenshots/image2.jpeg)
 
 ### 🖥️ Emergency Command Center
 
 The control room provides a real-time view of incidents, locations, routes, and responding units.
 
-![Emergency Command Center](screenshots/command-center.png)
+![Emergency Command Center](Output%20Screenshots/Image3.jpeg)
 
 ### 🤖 AI Risk Assessment
 
 The system analyzes the incident and provides a risk score, class probabilities, and extracted evidence.
 
-![AI Risk Assessment](screenshots/ai-risk-assessment.png)
+![AI Risk Assessment](Output%20Screenshots/Image4.jpeg)
 
 ---
 
