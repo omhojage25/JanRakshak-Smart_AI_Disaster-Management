@@ -1,0 +1,46 @@
+# JanRakshak Round 2 Contract
+
+## DO NOT CHANGE WITHOUT TEAM AGREEMENT
+
+### Incident status
+- RECEIVED
+- ASSESSED
+- ASSIGNED
+- EN_ROUTE
+- ARRIVED
+- CONTAINED
+- COMPLETED
+
+### Resource status
+- AVAILABLE
+- RESERVED
+- DISPATCHED
+- EN_ROUTE
+- ON_SCENE
+- AVAILABLE
+
+### Core entities
+Incident
+Resource
+Assignment
+User
+Location
+
+### Core events
+incident.created
+incident.updated
+incident.status.updated
+assignment.created
+assignment.updated
+resource.status.updated
+allocation.updated
+
+### Important rules
+
+1. A resource cannot have two active assignments.
+2. Coordinator approval is required before dispatch/reallocation.
+3. Gemini extracts evidence; it does not autonomously dispatch.
+4. Citizen receives only public-safe information.
+5. Field unit receives operational information.
+6. Existing APIs should be reused.
+7. Do not create duplicate state systems.

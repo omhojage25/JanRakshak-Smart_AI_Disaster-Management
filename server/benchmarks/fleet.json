@@ -1,0 +1,439 @@
+{
+ "note": "Snapshot of the Mumbai demo fleet and seeded blocked roads (positions, types, capabilities, capacity). Mobile units start available with zero load.",
+ "resources": [
+  {
+   "id": "c563567a-3b34-4b70-be89-da2d0737b26a",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-102",
+   "location_lat": 19.055,
+   "location_lng": 72.84,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "advanced_life_support",
+    "cardiac_monitor",
+    "ventilator",
+    "oxygen"
+   ]
+  },
+  {
+   "id": "6e3bf3fc-296d-4a71-90da-2525a2313ddc",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-103",
+   "location_lat": 19.075,
+   "location_lng": 72.878,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "basic_life_support",
+    "oxygen",
+    "stretcher"
+   ]
+  },
+  {
+   "id": "b2d64021-b12f-407b-8a2d-2437fc8042e2",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-106",
+   "location_lat": 19.185,
+   "location_lng": 72.849,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "basic_life_support",
+    "oxygen"
+   ]
+  },
+  {
+   "id": "d00c2576-7a07-471d-8960-85a924f3df8e",
+   "type": "fire_truck",
+   "name": "Andheri Fire Station",
+   "location_lat": 19.1198,
+   "location_lng": 72.8464,
+   "capacity": 3,
+   "current_load": 0,
+   "capabilities": [
+    "fire_suppression",
+    "rescue",
+    "ladder"
+   ]
+  },
+  {
+   "id": "83a0b61a-5021-4b49-9252-a166a592cc43",
+   "type": "shelter",
+   "name": "Andheri Sports Complex",
+   "location_lat": 19.12,
+   "location_lng": 72.85,
+   "capacity": 300,
+   "current_load": 0,
+   "capabilities": [
+    "temporary_housing",
+    "food_distribution",
+    "medical_camp",
+    "drinking_water"
+   ]
+  },
+  {
+   "id": "28005b8a-7898-4350-b363-284f73f81d80",
+   "type": "road_crew",
+   "name": "BMC Road Crew Beta",
+   "location_lat": 19.105,
+   "location_lng": 72.862,
+   "capacity": 5,
+   "current_load": 0,
+   "capabilities": [
+    "debris_clearing",
+    "barricading",
+    "pumping"
+   ]
+  },
+  {
+   "id": "57ae3e55-e07f-444f-afaf-09581b1ddd65",
+   "type": "road_crew",
+   "name": "BMC Road Crew Gamma",
+   "location_lat": 19.15,
+   "location_lng": 72.845,
+   "capacity": 5,
+   "current_load": 0,
+   "capabilities": [
+    "debris_clearing",
+    "barricading",
+    "road_repair",
+    "tree_removal"
+   ]
+  },
+  {
+   "id": "68fcf626-0f12-4475-b441-b0dccf1dd74b",
+   "type": "police",
+   "name": "Bandra Police Station",
+   "location_lat": 19.0544,
+   "location_lng": 72.8401,
+   "capacity": 10,
+   "current_load": 0,
+   "capabilities": [
+    "crowd_control",
+    "traffic_management",
+    "evacuation"
+   ]
+  },
+  {
+   "id": "46c8ff96-822f-4251-81e7-e2ad89e394bc",
+   "type": "police",
+   "name": "Colaba Police Station",
+   "location_lat": 18.9067,
+   "location_lng": 72.8147,
+   "capacity": 10,
+   "current_load": 0,
+   "capabilities": [
+    "crowd_control",
+    "traffic_management",
+    "evacuation"
+   ]
+  },
+  {
+   "id": "578b3c3c-4095-4670-a80a-e21ac7226db2",
+   "type": "police",
+   "name": "Dadar Police Station",
+   "location_lat": 19.018,
+   "location_lng": 72.843,
+   "capacity": 10,
+   "current_load": 0,
+   "capabilities": [
+    "crowd_control",
+    "traffic_management",
+    "evacuation",
+    "first_aid"
+   ]
+  },
+  {
+   "id": "90bca877-21c8-4a66-9769-3f00d69ca063",
+   "type": "shelter",
+   "name": "Dharavi Community Centre",
+   "location_lat": 19.042,
+   "location_lng": 72.853,
+   "capacity": 200,
+   "current_load": 45,
+   "capabilities": [
+    "temporary_housing",
+    "food_distribution",
+    "first_aid",
+    "drinking_water"
+   ]
+  },
+  {
+   "id": "aacee3f0-3bb9-430c-90d8-71d786b04551",
+   "type": "hospital",
+   "name": "Hinduja Hospital",
+   "location_lat": 19.0382,
+   "location_lng": 72.8374,
+   "capacity": 350,
+   "current_load": 245,
+   "capabilities": [
+    "trauma",
+    "icu",
+    "surgery",
+    "emergency",
+    "pediatric",
+    "oncology"
+   ]
+  },
+  {
+   "id": "c7a895a2-5772-4c12-ac78-5d0d7e559842",
+   "type": "hospital",
+   "name": "KEM Hospital",
+   "location_lat": 19.0003,
+   "location_lng": 72.8416,
+   "capacity": 500,
+   "current_load": 410,
+   "capabilities": [
+    "trauma",
+    "burn_unit",
+    "icu",
+    "surgery",
+    "pediatric",
+    "emergency"
+   ]
+  },
+  {
+   "id": "b6e18eef-4cc8-495e-82e6-9434a58c1281",
+   "type": "hospital",
+   "name": "Lilavati Hospital",
+   "location_lat": 19.0509,
+   "location_lng": 72.8283,
+   "capacity": 300,
+   "current_load": 180,
+   "capabilities": [
+    "trauma",
+    "icu",
+    "surgery",
+    "cardiac",
+    "emergency",
+    "neurology"
+   ]
+  },
+  {
+   "id": "24229e2f-435e-467c-918e-36633abecd96",
+   "type": "hospital",
+   "name": "Nair Hospital",
+   "location_lat": 18.9885,
+   "location_lng": 72.8329,
+   "capacity": 350,
+   "current_load": 290,
+   "capabilities": [
+    "trauma",
+    "icu",
+    "surgery",
+    "emergency",
+    "burn_unit"
+   ]
+  },
+  {
+   "id": "2efac92b-91af-482f-bf9b-4ea505191a39",
+   "type": "hospital",
+   "name": "Sion Hospital",
+   "location_lat": 19.0408,
+   "location_lng": 72.8625,
+   "capacity": 400,
+   "current_load": 340,
+   "capabilities": [
+    "trauma",
+    "icu",
+    "surgery",
+    "emergency",
+    "orthopedic"
+   ]
+  },
+  {
+   "id": "03f98957-273d-4a66-ad68-14535a8fd73d",
+   "type": "shelter",
+   "name": "Sion Municipal School",
+   "location_lat": 19.0415,
+   "location_lng": 72.861,
+   "capacity": 150,
+   "current_load": 0,
+   "capabilities": [
+    "temporary_housing",
+    "food_distribution",
+    "drinking_water"
+   ]
+  },
+  {
+   "id": "724c0545-4517-4713-981e-fc626542bdec",
+   "type": "shelter",
+   "name": "Worli Community Hall",
+   "location_lat": 19.016,
+   "location_lng": 72.818,
+   "capacity": 120,
+   "current_load": 0,
+   "capabilities": [
+    "temporary_housing",
+    "food_distribution"
+   ]
+  },
+  {
+   "id": "f29507f4-013d-442f-ab87-07f997a81d8d",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-101",
+   "location_lat": 19.0223,
+   "location_lng": 72.8561,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "basic_life_support",
+    "oxygen",
+    "stretcher"
+   ]
+  },
+  {
+   "id": "91a1a227-ec7e-4166-b3c1-15c7cc17fc30",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-105",
+   "location_lat": 19.05,
+   "location_lng": 72.89,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "advanced_life_support",
+    "cardiac_monitor",
+    "oxygen",
+    "pediatric"
+   ]
+  },
+  {
+   "id": "862f8e3c-d07b-4de3-86ec-01638854f16e",
+   "type": "police",
+   "name": "Andheri Police Station",
+   "location_lat": 19.1195,
+   "location_lng": 72.8468,
+   "capacity": 10,
+   "current_load": 0,
+   "capabilities": [
+    "crowd_control",
+    "traffic_management",
+    "evacuation",
+    "first_aid"
+   ]
+  },
+  {
+   "id": "87a9764e-6584-47ba-a445-c74c02cbf8b7",
+   "type": "fire_truck",
+   "name": "Borivali Fire Station",
+   "location_lat": 19.2288,
+   "location_lng": 72.8544,
+   "capacity": 3,
+   "current_load": 0,
+   "capabilities": [
+    "fire_suppression",
+    "rescue",
+    "water_tanker"
+   ]
+  },
+  {
+   "id": "2b056b81-1a14-47d7-a374-6f40bdfbdaa5",
+   "type": "fire_truck",
+   "name": "Dadar Fire Station",
+   "location_lat": 19.0178,
+   "location_lng": 72.8478,
+   "capacity": 3,
+   "current_load": 0,
+   "capabilities": [
+    "fire_suppression",
+    "rescue",
+    "ladder",
+    "water_tanker"
+   ]
+  },
+  {
+   "id": "b1da9417-f496-47dc-896f-c31041bd77c0",
+   "type": "fire_truck",
+   "name": "Parel Fire Station",
+   "location_lat": 19.0045,
+   "location_lng": 72.8395,
+   "capacity": 3,
+   "current_load": 0,
+   "capabilities": [
+    "fire_suppression",
+    "rescue",
+    "hazmat",
+    "chemical_fire"
+   ]
+  },
+  {
+   "id": "b131289c-a19d-4dcd-bf28-b4b71101af1e",
+   "type": "ambulance",
+   "name": "Ambulance Unit A-104",
+   "location_lat": 19.114,
+   "location_lng": 72.869,
+   "capacity": 2,
+   "current_load": 0,
+   "capabilities": [
+    "basic_life_support",
+    "oxygen",
+    "stretcher"
+   ]
+  },
+  {
+   "id": "b9ab460f-f58b-4099-82fb-31fa023fe026",
+   "type": "fire_truck",
+   "name": "Byculla Fire Station",
+   "location_lat": 18.9787,
+   "location_lng": 72.8334,
+   "capacity": 3,
+   "current_load": 0,
+   "capabilities": [
+    "fire_suppression",
+    "hazmat",
+    "rescue",
+    "ladder"
+   ]
+  },
+  {
+   "id": "1eb6dce7-e681-46d3-af7f-c5921b7701b0",
+   "type": "road_crew",
+   "name": "BMC Road Crew Alpha",
+   "location_lat": 19.03,
+   "location_lng": 72.855,
+   "capacity": 5,
+   "current_load": 0,
+   "capabilities": [
+    "debris_clearing",
+    "barricading",
+    "pumping",
+    "road_repair"
+   ]
+  }
+ ],
+ "blocked_roads": [
+  {
+   "id": "8918e186-2ddb-4245-9ab0-4023dc5b693a",
+   "start_lat": 19.038,
+   "start_lng": 72.858,
+   "end_lat": 19.042,
+   "end_lng": 72.862,
+   "road_name": "Sion-Matunga Link Road"
+  },
+  {
+   "id": "cb95856d-00e8-4d87-98b2-75fff022329e",
+   "start_lat": 18.954,
+   "start_lng": 72.83,
+   "end_lat": 18.956,
+   "end_lng": 72.832,
+   "road_name": "Bhendi Bazaar Main Road"
+  },
+  {
+   "id": "c52ea261-0430-440e-8b7f-575fe2f33fdf",
+   "start_lat": 19.118,
+   "start_lng": 72.8455,
+   "end_lat": 19.12,
+   "end_lng": 72.848,
+   "road_name": "Andheri Subway Underpass"
+  },
+  {
+   "id": "35b3fa7d-5c3c-44c6-8c86-ee58f74a98a7",
+   "start_lat": 19.117,
+   "start_lng": 72.845,
+   "end_lat": 19.1195,
+   "end_lng": 72.847,
+   "road_name": "Western Express Highway (Goregaon stretch)"
+  }
+ ]
+}

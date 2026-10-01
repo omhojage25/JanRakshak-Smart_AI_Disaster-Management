@@ -1,0 +1,90 @@
+<svg viewBox="0 0 360 620" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: system-ui, sans-serif; fill: #1e293b; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .label { font-size: 11px; font-weight: 700; }
+    .sub { font-size: 9px; fill: #475569; }
+    .arrow { font-size: 14px; fill: #94a3b8; }
+    .tag { font-size: 8px; font-weight: 600; fill: #ffffff; }
+  </style>
+
+  <rect width="360" height="620" fill="#f8fafc"/>
+
+  <!-- DATA / INPUTS -->
+  <rect x="40" y="12" width="280" height="48" rx="8" class="box"/>
+  <rect x="40" y="12" width="280" height="18" rx="8" fill="#3b82f6"/>
+  <rect x="40" y="22" width="280" height="8" fill="#3b82f6"/>
+  <text x="180" y="26" text-anchor="middle" class="tag">DATA / INPUTS</text>
+  <text x="180" y="46" text-anchor="middle" class="sub">Citizen Reports (EN / HI / MR) · OSM Map Tiles</text>
+
+  <text x="180" y="72" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- WEB INTAKE -->
+  <rect x="70" y="80" width="220" height="48" rx="8" class="box"/>
+  <rect x="70" y="80" width="220" height="18" rx="8" fill="#6366f1"/>
+  <rect x="70" y="90" width="220" height="8" fill="#6366f1"/>
+  <text x="180" y="94" text-anchor="middle" class="tag">WEB INTAKE FORM</text>
+  <text x="180" y="114" text-anchor="middle" class="sub">Manual · Phone · Social Media</text>
+
+  <text x="180" y="140" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- BACKEND API -->
+  <rect x="70" y="148" width="220" height="55" rx="8" class="box"/>
+  <rect x="70" y="148" width="220" height="18" rx="8" fill="#10b981"/>
+  <rect x="70" y="158" width="220" height="8" fill="#10b981"/>
+  <text x="180" y="162" text-anchor="middle" class="tag">BACKEND API</text>
+  <text x="180" y="182" text-anchor="middle" class="sub">Express 5 + TypeScript</text>
+  <text x="180" y="194" text-anchor="middle" class="sub">SQLite · 6 Tables · 18 Endpoints</text>
+
+  <text x="180" y="215" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- AI CLASSIFIER -->
+  <rect x="70" y="223" width="220" height="62" rx="8" class="box"/>
+  <rect x="70" y="223" width="220" height="18" rx="8" fill="#f59e0b"/>
+  <rect x="70" y="233" width="220" height="8" fill="#f59e0b"/>
+  <text x="180" y="237" text-anchor="middle" class="tag">AI CLASSIFIER</text>
+  <text x="180" y="257" text-anchor="middle" class="sub">Google Gemini 2.0 Flash</text>
+  <text x="180" y="269" text-anchor="middle" class="sub">16 structured fields extracted</text>
+  <text x="180" y="281" text-anchor="middle" class="sub">Keyword fallback for offline</text>
+
+  <text x="180" y="297" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- INCIDENT ENGINE -->
+  <rect x="70" y="305" width="220" height="62" rx="8" class="box"/>
+  <rect x="70" y="305" width="220" height="18" rx="8" fill="#ef4444"/>
+  <rect x="70" y="315" width="220" height="8" fill="#ef4444"/>
+  <text x="180" y="319" text-anchor="middle" class="tag">INCIDENT ENGINE</text>
+  <text x="180" y="339" text-anchor="middle" class="sub">Deduplication (Haversine &lt;500m)</text>
+  <text x="180" y="351" text-anchor="middle" class="sub">Temporal Escalation</text>
+  <text x="180" y="363" text-anchor="middle" class="sub">Cross-Incident Impact Propagation</text>
+
+  <text x="180" y="379" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- RESPONSE ENGINE -->
+  <rect x="70" y="387" width="220" height="55" rx="8" class="box"/>
+  <rect x="70" y="387" width="220" height="18" rx="8" fill="#8b5cf6"/>
+  <rect x="70" y="397" width="220" height="8" fill="#8b5cf6"/>
+  <text x="180" y="401" text-anchor="middle" class="tag">RESPONSE ENGINE</text>
+  <text x="180" y="421" text-anchor="middle" class="sub">Smart Resource Matching (4-factor)</text>
+  <text x="180" y="433" text-anchor="middle" class="sub">Resource Exhaustion Prediction</text>
+
+  <text x="180" y="454" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- COORDINATOR DASHBOARD -->
+  <rect x="70" y="462" width="220" height="55" rx="8" class="box"/>
+  <rect x="70" y="462" width="220" height="18" rx="8" fill="#0ea5e9"/>
+  <rect x="70" y="472" width="220" height="8" fill="#0ea5e9"/>
+  <text x="180" y="476" text-anchor="middle" class="tag">COORDINATOR DASHBOARD</text>
+  <text x="180" y="496" text-anchor="middle" class="sub">Live Map · Incident Feed · AI Recommendations</text>
+  <text x="180" y="508" text-anchor="middle" class="sub">Approve / Reject · Human-in-the-loop</text>
+
+  <text x="180" y="529" text-anchor="middle" class="arrow">↓</text>
+
+  <!-- DISPATCH + AUDIT -->
+  <rect x="70" y="537" width="220" height="48" rx="8" class="box"/>
+  <rect x="70" y="537" width="220" height="18" rx="8" fill="#64748b"/>
+  <rect x="70" y="547" width="220" height="8" fill="#64748b"/>
+  <text x="180" y="551" text-anchor="middle" class="tag">DISPATCH + AUDIT</text>
+  <text x="180" y="571" text-anchor="middle" class="sub">Resource Deployed · Status Tracked</text>
+  <text x="180" y="583" text-anchor="middle" class="sub">Every action logged for accountability</text>
+</svg>
